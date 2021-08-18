@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css?family=Bahianita|Do+Hyeon|Khand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/*
+font-family: 'Khand', sans-serif;
+font-family: 'Bahianita', cursive;
+font-family: 'Do Hyeon', sans-serif;
+*/
+@font-face {
+    font-family: gotbook;
+    src: url(https://cdn.discordapp.com/attachments/644631964774694942/738180868748607649/GOTHAM-MEDIUM.OTF);
+}
+
+@font-face {
+    font-family: gotblack;
+    src: url(https://cdn.discordapp.com/attachments/644631964774694942/738179761620123698/GOTHAM-BOLD.OTF);
+}
+  
+body {
+    background: transparent !important;
+    margin-top:80px;
+}
+
+#bankingContainer {
+    background: #f3f3f3;
+    min-height: 800px;
+    max-height: 800px;
+    border-top: 5px solid #dc143cbf;
+    border-bottom: 5px solid #dc143cbf;
+    display: none;
+   
+}
+
+#bankingload {
+}
+
+#ATMContainer {
+    background: rgba(0, 0, 0, 0.8) !important;
+    border-radius: 20px;
+    min-height:800px;
+    max-height:800px;
+    display:none;
+    border: 2px solid red;
+}
+
+.statement:hover {
+    background: rgba(150, 149, 149, 0.5) !important;
+}
+
+#v-pills-tabContent, #v-pills-tabContent-atm {
+    overflow-y: scroll;
+    min-height:100%;
+}
+
+#v-pills-tabContent::-webkit-scrollbar-track, #v-pills-tabContent-atm::-webkit-scrollbar-track {
+    background-color:transparent;
+    border: none;
+}
+
+#v-pills-tabContent::-webkit-scrollbar-thumb, #v-pills-tabContent-atm::-webkit-scrollbar-thumb {
+    background-color:transparent;
+    border:none;
+}
+
+#v-pills-tabContent::-webkit-scrollbar, #v-pills-tabContent-atm::-webkit-scrollbar {
+    width: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color:transparent
+}
+
+.title {
+    color: #3e3e3e;
+    border-left: 2px solid #dc143c;
+    font-family: 'Poppins';
+    margin-bottom: 28px;
+}
+
+.content {
+    color: white;
+    font-size: 20px;
+}
+
+.mt-col3 {
+    margin-top: 32px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff !important;
+    background-color: #dc143c;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem; }
+
+    .shadow-lg {
+        box-shadow: none !important;
+    }
+
+a.nav-link{
+    color: #4a4a4a !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #0000001f;
+}
+
+.account-card {
+    background: rgb(220 20 60);
+    color: white;
+}
+
+#logoffbutton {
+    background-color: #6d6d6d;
+    color: white;
+}
+
+
+.index-card {
+    background: rgb(109 109 109);
+    color: white;
+    border-top: 7px solid #dc143c;
+}
+
+.card-text {
+    opacity: 0.4;
+}
+
+h3.texth3 {
+    font-size: 1rem;
+}
+
+.lds-grid {
+    display: inline-block;
+    position: relative;
+    width: 37px;
+    height: 80px;
+    /* top: 12%; */
+    /* margin-top: 15px; */
+  }
+  .lds-grid div {
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background: #dc143c;
+    animation: lds-grid 1.2s linear infinite;
+    margin-top: 78%;
+  }
+  .lds-grid div:nth-child(1) {
+    top: 8px;
+    left: 8px;
+    animation-delay: 0s;
+  }
+  .lds-grid div:nth-child(2) {
+    top: 8px;
+    left: 32px;
+    animation-delay: -0.4s;
+  }
+  .lds-grid div:nth-child(3) {
+    top: 8px;
+    left: 56px;
+    animation-delay: -0.8s;
+  }
+  .lds-grid div:nth-child(4) {
+    top: 32px;
+    left: 8px;
+    animation-delay: -0.4s;
+  }
+  .lds-grid div:nth-child(5) {
+    top: 32px;
+    left: 32px;
+    animation-delay: -0.8s;
+  }
+  .lds-grid div:nth-child(6) {
+    top: 32px;
+    left: 56px;
+    animation-delay: -1.2s;
+  }
+  .lds-grid div:nth-child(7) {
+    top: 56px;
+    left: 8px;
+    animation-delay: -0.8s;
+  }
+  .lds-grid div:nth-child(8) {
+    top: 56px;
+    left: 32px;
+    animation-delay: -1.2s;
+  }
+  .lds-grid div:nth-child(9) {
+    top: 56px;
+    left: 56px;
+    animation-delay: -1.6s;
+  }
+  @keyframes lds-grid {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+
+  .smalltext {
+    font-size: 12px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    opacity: 0.9;
+  }
+
+  #loadscreen {
+      margin-top: 20%;
+      text-align: center;
+      display: none;
+  }
+
+ div.loadscreen-text p {
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #000000ad;
+  }
+
